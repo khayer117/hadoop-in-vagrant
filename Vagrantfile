@@ -88,11 +88,4 @@ Vagrant.configure("2") do |config|
     end
 
   end
-
-  config.vm.define "hndata1" do |hndata1|
-    hndata1.vm.box = "ubuntu/trusty64"
-	hndata1.vm.network "private_network", ip: "192.168.33.51"
-	#hndata1.vm.provision :shell, path: "bootstrap-hndata1.sh"
-	hndata1.vm.hostname="hndata1"
-  end
 end
